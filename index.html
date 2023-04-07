@@ -9,6 +9,69 @@
     <title>Sign-Up-Form</title>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="side-img">
+            <div>
+                <img src="odin-lined.png" alt="Odin Logo">
+                <h1>Sign-Up Form</h1>
+            </div>
+            <p>Foto por Richard Stachmann en Unsplash</p>
+        </div>
+        <div class="form-section">
+            <div class="header">
+                <div>
+                    <p>Esto no es un servicio real! Sabes que necesitas algo asi en tu vida para cumplir tus sueños. Registrate <em>ahora</em> para empezar.</p>
+                    <p><em>Sabes</em> que lo queres.</p>
+                </div>
+            </div>
+        <div>
+            <div class="input-section">
+                <p>Hagamoslo!</p>
+                <form action="#" method="post" id="my-form">
+                    
+                    <label for="first-name">Nombre
+                        <input type="text" name="first-name" id="first-name" required>
+                        <div id="first-name-error" class="error"></div>
+                    </label>
+
+                    <label for="last-name">Apellido
+                        <input type="text" name="last-name" id="last-name" required>
+                        <div id="last-name-error" class="error"></div>
+                    </label>
+
+                    <label for="email">Email
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                        <div id="email-error" class="error"></div>
+                    </label>
+
+                    <label for="phone-number">Nro de teléfono
+                        <input type="tel" name="phone-number" id="phone-number" required
+                        pattern="[0-9]{10}">
+                        <div id="tel-error" class="error"></div>
+                    </label>
+
+                    <label for="password">Contraseña
+                        <input type="password" name="password" id="password" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <div id="password-error" class="error"></div>
+                    </label>
+
+                    <label for="password-confirmation">Confirmar Contraseña
+                        <input type="password" name="password-confirmation" id="password-confirmation" required
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <div id="password-confirmation-error" class="error"></div>
+                    </label>
+
+                </form>
+            </div>
+        </div>
+            <div class="submit-section">
+                <div>
+                    <button type="submit" form="my-form">Crear Cuenta</button>
+                    <p>Ya tenes una cuenta? <a href="#">Ingresar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
