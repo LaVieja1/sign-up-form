@@ -15,18 +15,22 @@ body {
     min-height: 100vh;
     min-width: 100vh;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .main-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .landscape-img {
-    width: 30%;
-    height: 70%;
+    width: 40%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .form-container {
@@ -36,10 +40,46 @@ body {
     align-items: center;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
 .form-data {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    width: 40%;
+}
+
+button {
+    width: 25%;
+    margin: 5px;
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
 }
