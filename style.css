@@ -6,3 +6,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landscape-img {
+    width: 30%;
+    height: 70%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
