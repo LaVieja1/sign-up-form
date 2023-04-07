@@ -118,7 +118,7 @@ a {
 
 button[type="submit"] {
     padding: .8rem 1.3rem;
-    font: 1.3rem;
+    font-size: 1.3rem;
     background-color: darkgreen;
     border: none;
     border-radius: 10px;
